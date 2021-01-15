@@ -1,4 +1,4 @@
-package my.day8.a.While;
+package my.day08.a.While;
 
 public class WhileMain {
 
