@@ -57,7 +57,7 @@ public class Sum2Main {
 				
 				System.out.println(str+"="+sum);
 				*/
-								
+				sc.close();			
 				break;	//위의 두 정수값을 잘못 넣으면은 아래에 오류메시지 출력 부분으로 넘어가서 오류메세지 출력 후 다시 try 실행문 첫째줄로 돌아가지만
 						//올바르게 두 값을 넣으면은 break문을 만나면서 for문을 빠져나오게 된다.
 				
@@ -68,12 +68,9 @@ public class Sum2Main {
 		}//end of for------------------		
 		
 		
+		
 		System.out.println(str+"="+sum);		
 		
-		
-		
-		
-		sc.close();
 		System.out.println("\n==프로그램 종료==");
 	}
 

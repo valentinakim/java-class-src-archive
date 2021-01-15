@@ -138,7 +138,8 @@ public class WrapperMain {
 		Integer a2 = new Integer(a1); // Boxing
 		int b2 = 10;
 		// Integer b2 = a1; //auto boxing
-		// System.out.println("b2 => " + b2);
+		System.out.println("a1 => " + a2);
+		System.out.println("b2 => " + b2);
 		
 		// UnBoxing(언박싱, 포장을 푸는것) 이란?   
 	    // ==> Wrapper 클래스(Boolean, Byte, Short, Integer, Long, Character, Float, Double)로 
