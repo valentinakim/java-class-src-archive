@@ -37,9 +37,7 @@ public class PrimeNumberMain {
 		Scanner sc = new Scanner(System.in);
 		
 		int startNum=0, lastNum=0;
-		String resultStr="";
-		int cnt=0;
-		int sum=0;
+		
 		
 		do {
 			try {
@@ -67,17 +65,61 @@ public class PrimeNumberMain {
 		
 		///////////////////////////////////////////////////////////////////
 		
-		// startNum ==> 1
-		// lastNum ==> 20
+		// startNum ==> 1		5
+		// lastNum ==> 20		20
 		// 1부터 20까지의 소수 구하기
 		
+		String resultStr="";
+		int cnt=0;
+		int sum=0;
 		
+		
+		for(int i=startNum; i<=lastNum; i++) {
+			
+			if(i==1)	//i가 소수인지아닌지 검사할 대상임. 
+				continue;	//1은 소수가 아니므로 건너뛴다
+			
+			
+			/*
+			 	나누기를 했을 때 나머지가 얼마인지 일일이 검사를 한다.
+			 	만약 i가 2라면 ==> 2는 소수
+			 	만약 i가 3라면 ==> 3%2	소수
+			 	만약 i가 4라면 ==> 4%2 ==0	소수가 아니다	4%3 검사할 필요 X
+			 	만약 i가 5라면 ==> 5%2 5%3 5%4 	소수
+			 	만약 i가 9라면 ==> 9%2 9%3 ==0	소수가 아니다	9%3 검사할 필요 X
+			 	
+			 */	
+			
+				boolean isSosu = true;
+				
+			 	for(int j=2; j<i; j++) {		//j는 분모에 들어갈 값
+			 		if(i%j == 0) {	//검사대상인 i가 소수가 아닌 경우
+			 			isSosu = false;		//소수가 아님을 표시한다
+			 			break;		
+			 		}
+			 	}
+			 	
+			 	if(isSosu) {	//검사대상인 i가 소수라면
+			 	// ^^^^^^ 위의 for문에서 정수가 소수여서 true가 되면 아래 실행문이 동작되면서 isSosu = false값이 저장된다
+			 		cnt++;	//소수의 개수
+			 		sum += i; 	//소수들의 누적합계;
+			 		
+			 		// 235711131719
+			 		//,2,3,5,7,11,13,17,19
+			 		// 2,3,5,7,11,13,18,19
+			 		
+			 		String comma = (cnt > 1)?",":"";	//두번ㄴ째 나오는 소수부터는 소수 앞에 콤마
+			 		resultStr += comma + i; 
+			 		
+			 	}
+			
+		}//end of for---------------------
 		
 		
 		
 		System.out.println(startNum+"부터 "+lastNum+"까지의 소수는?\n"+resultStr);
-		System.out.println(startNum+"부터 "+lastNum+"까지의 소수의 개수?"+cnt+"개");
-		System.out.println(startNum+"부터 "+lastNum+"까지의 소수들의 합?"+sum);
+		System.out.println(startNum+"부터 "+lastNum+"까지의 소수의 개수? "+cnt+"개");
+		System.out.println(startNum+"부터 "+lastNum+"까지의 소수들의 합? "+sum);
 		
 		
 		sc.close();
