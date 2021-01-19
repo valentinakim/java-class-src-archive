@@ -2,7 +2,7 @@ package my.day08.b.DoWhile;
 
 import java.util.Scanner;
 
-public class FactorialMain {
+public class FactorialMain2 {
 
 	public static void main(String[] args) {
 

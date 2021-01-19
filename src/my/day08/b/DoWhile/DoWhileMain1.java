@@ -1,6 +1,6 @@
 package my.day08.b.DoWhile;
 
-public class DoWhileMain {
+public class DoWhileMain1 {
 
 	public static void main(String[] args) {
 

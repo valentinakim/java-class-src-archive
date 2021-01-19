@@ -3,7 +3,7 @@ package my.day08.b.DoWhile;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class PrimeNumberMain {
+public class PrimeNumberMain3 {
 
 	public static void main(String[] args) {
 		

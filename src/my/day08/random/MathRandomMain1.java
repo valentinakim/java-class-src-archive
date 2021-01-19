@@ -2,7 +2,7 @@ package my.day08.random;
 
 import java.util.Scanner;
 
-public class MathRandomMain {
+public class MathRandomMain1 {
 
 	public static void main(String[] args) {
 

@@ -3,7 +3,7 @@ package my.day08.random;
 import java.util.Random;
 import java.util.Scanner;
 
-public class RandomMain {
+public class RandomMain2 {
 
 	public static void main(String[] args) {
 
