@@ -30,6 +30,9 @@ public class MyUtil {
 		// ex) "ab123cd#S".toCharArray();를 하면
 		// {'a' 'b' '1' '2' '3' 'c' 'd' '#' 'S'} 으로 변환된다.
 		
+		if(passwd == null)
+			return false;
+		
 		char[] chArr = passwd.toCharArray();
 			// ^^^^^^^^^^^^^ 리턴값을 char 타입 배열로 돌려준다
 		/*

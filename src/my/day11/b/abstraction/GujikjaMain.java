@@ -116,13 +116,6 @@ public class GujikjaMain {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
 	}//end of main-----------------
 
 	
