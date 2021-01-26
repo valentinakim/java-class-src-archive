@@ -1,4 +1,4 @@
-package my.day13.c.polymorphism;
+package my.day14.a.abstractClass;
 
 public class Dog extends Animal{
 
@@ -27,10 +27,12 @@ public class Dog extends Animal{
 						+ "3. 몸무게 : "+weight+"kg\n");
 	}
 	
+	
 	@Override
-	public void cry() {
+	public void cry() {	// 부모 클래스의 접근 제한자와 같든지 또는 접근허용 범위가 더 큰 걸 써야한다
 		System.out.println("강아지는 '멍멍'하며 짖습니다");
 	}
+	
 	
 	public void run() {
 		System.out.println(">> 강아지가 빠르게 달립니다.");

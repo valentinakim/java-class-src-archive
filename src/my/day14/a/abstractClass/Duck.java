@@ -1,4 +1,4 @@
-package my.day13.c.polymorphism;
+package my.day14.a.abstractClass;
 
 public class Duck extends Animal{
 
