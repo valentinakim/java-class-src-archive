@@ -9,6 +9,11 @@ public class Triangle implements Figure{
 		return x*y*0.5;
 		
 	}
+
+	@Override
+	public double circleArea(double r) {
+		return 0;
+	}
 	
 	
 }

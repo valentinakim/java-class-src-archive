@@ -6,7 +6,8 @@ public class Me extends Father {
 	public class Me extends Father,Mother {
 							^^^^^^^^^^^^^
 	}
-	 	==> 자바는 다중상속이 불가하다. C++은 가능함
+	 	==> 자바는 여러클래스의 다중상속이 불가하다. C++은 가능함
+	 	
 	*/
 	
 	

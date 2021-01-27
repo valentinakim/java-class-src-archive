@@ -20,7 +20,7 @@ public interface Figure {
 	//인터페이스 implements한 클래스에서 반드시 메소드 오버라이딩 해야한다
 	//protected abstract double area(double x, double y ); //에러 발생. protected 쓸 수 없다.
 	
-	
+	double circleArea(double r);
 	
 	
 	

@@ -19,17 +19,22 @@ public class MainInterface {
 		System.out.println("밑변 4, 높이 5인 삼각형의 넓이 => "+tri.area(4, 5));
 		System.out.println("가로 4, 세로 5인 사각형의 넓이 => "+rt.area(4, 5));
 		
+		System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+
 		// == 다형성 (Polymorphism) ==
 		//자식클래스로 생성되어진 객체를 부모 클래스의 타입으로 받을 수 있다.
 		//특정한 인터페이스로 구현된 클래스의 객체를 특정한 인터페이스로 받을 수 있다 
 
 		Figure fg1 = new Triangle();
 		Figure fg2 = new Rectangle();
-
+		Figure fg3 = new Circle();
 		
 		
 		//Figure fgArr = new Figure[3];	//에러. 인터페이스는 클래스가 아니기 때문에 이런 식으로 객체를 생성할 수 없다
 		
+		System.out.println("밑변 4, 높이 5인 삼각형의 넓이 => "+fg1.area(4, 5));
+		System.out.println("가로 4, 세로 5인 사각형의 넓이 => "+fg2.area(4, 5));
+		System.out.println("반지름이 4인 원의 넓이 => "+fg3.circleArea(4));
 			
 		
 	

@@ -9,6 +9,11 @@ public class Rectangle implements Figure{
 		return x*y;
 		
 	}
+
+	@Override
+	public double circleArea(double r) {
+		return 0;
+	}
 	
 	
 	
