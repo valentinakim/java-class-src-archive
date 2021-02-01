@@ -157,7 +157,7 @@ public class Main {
 					break;
 					
 				case "6":	//구인회사 출력
-					ctrl.showCompanyAll(mbrArr);
+					//ctrl.showCompanyAll(mbrArr);
 					break;
 					
 				case "7":	//로그아웃

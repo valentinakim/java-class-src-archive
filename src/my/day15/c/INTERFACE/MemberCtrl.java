@@ -314,7 +314,7 @@ public class MemberCtrl implements InterMemberCtrl{
 	
 	//특정 회원정보 한명 출력(구직자, 구인회사)
 	@Override
-	public String showInfo(Member mbr) {
+	public String showInfo(Member[] mbrArr) {
 
 			
 			System.out.println("----------------------------------------------------");
@@ -323,8 +323,8 @@ public class MemberCtrl implements InterMemberCtrl{
 			
 				
 				for(int i=0; i<Member.count; i++) {
-					if(mbr instanceof Jobseeker)
-						mbr.viewInfo();
+					if(mbrArr instanceof Jobseeker)
+						//mbr.viewInfo();
 				}
 			
 		}
@@ -332,8 +332,9 @@ public class MemberCtrl implements InterMemberCtrl{
 	}
 	
 	//회원(구직자, 구인회사)으로 사용가능한지 알아보는 메소드(null값이 있는지 없는지 알아보기)
+	
 	@Override
-	public boolean isRegistered(Member mbr) {
+	public boolean isRegistered(Member[] mbrArr) {
 		
 		String id = mbr.getId();
 		String passwd = mbr.getPasswd();
@@ -358,10 +359,10 @@ public class MemberCtrl implements InterMemberCtrl{
 		return false;
 		
 	}
+	
 	}//end of public boolean isRegistered(Member mbr)---------------------------------------------------
 
 	
 	
 		
 	
-}
